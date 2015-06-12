@@ -8,7 +8,7 @@ import (
 	"github.com/facebookgo/stack"
 )
 
-var replacer = strings.NewReplacer(".", "_", "/", "_")
+var replacer = strings.NewReplacer(".", "_", "/", "_", ":", "_")
 
 // Get finds the name of test and the package from the stack, if possible, or tries its best otherwise.
 func Get(id string) string {
